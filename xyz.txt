@@ -1,0 +1,49 @@
+Drop down 
+
+ driver.findElement(By.id("continents")).click();
+      WebElement dropdown = driver.findElement(By.id("continents"));
+      dropdown.findElement(By.xpath("//option[. = 'Europe']")).click();
+
+//////////////////////////////////////////////////////////////////////////////////
+
+	Select drop1 = new Select(driver.findElement(By.xpath("//select[@id=\"selenium_commands\"]")));
+	drop1.selectByVisibleText("WebElement Commands");
+
+        Select drpContinents= new Select (driver.findElement(By.xpath("//select[@id='continents']")));
+	drpContinents.selectByVisibleText("Europe");
+
+////////////
+
+Radio Button
+
+  radio1=driver.findElement(By.xpath("//input[@id=\"sex-0\"]"));
+		radio1.click();
+
+/////////
+
+ driver.findElement(By.xpath("// input[@id='photo']")).sendKeys("C:\\Users\\2095760\\Downloads\\download.png");
+
+////////
+
+@BeforeTest
+	 public void splashScreen() {
+		  System.out.println("splash");
+	  }
+  
+  
+  @AfterTest
+	 public void SignOUt() {
+		  System.out.println("bye");
+	  }
+
+/////////
+
+@Test (priority = 4)
+
+////////
+
+
+
+
+
+
